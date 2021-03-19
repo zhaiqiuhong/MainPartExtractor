@@ -235,10 +235,10 @@ public class processData {
     //联结多个文件
     private static void concatData() throws IOException {
         File f = new File(
-                "src/main/java/com/hankcs/nlp/data/cnews.train.processed.txt");
+                "src/main/java/com/hankcs/nlp/data/fudan.test.processed.txt");
         FileWriter fos1 = new FileWriter(f, true);
-        for (int i = 1; i <= 4; i++) {
-            String pathname = "src/main/java/com/hankcs/nlp/data/cnews.train.processed."
+        for (int i = 1; i <= 6; i++) {
+            String pathname = "src/main/java/com/hankcs/nlp/data/fudan.test.processed."
                     + i + ".txt";
             File filename = new File(pathname); // 要读取以上路径的input txt文件
             InputStreamReader reader = new InputStreamReader(
@@ -341,10 +341,10 @@ public class processData {
     public static void main(String[] args) throws IOException {
 //        cutData();
 //        cutDataBefore();
-//        concatData();
+        concatData();
 //        mkFile();
 //        mkOldFile();
-        delSpace();   //去除空格 + 用来转换txt文件名
+//        delSpace();   //去除空格 + 用来转换txt文件名
 //        getContent();   //提取正文
 //        delNullContent();   //删除【正文】为空的内容
 //        delSpecialSpace();  //删除空白符
