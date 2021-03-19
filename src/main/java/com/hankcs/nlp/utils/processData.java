@@ -3,6 +3,7 @@ package com.hankcs.nlp.utils;
 import java.io.*;
 
 public class processData {
+    //测试push
     //cut 提取关键词之后的并输出
     private static void cutData() throws IOException {
         String pathname = "src/main/java/com/hankcs/nlp/data/fudan.train.5.txt";
